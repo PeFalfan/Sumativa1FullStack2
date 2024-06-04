@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga</title>
+    <link rel="stylesheet" href="/styles/manga-style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- navBar con opciones de ingreso y registro con angular esto desaparecerá -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="../index.html"><img class="logo-image" alt="Logo" title="Logo"
+                    src="../assets/images/home-icon.jpg"></a>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">Anime</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="../views/manga.html">Manga</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">Streaming</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="./carrito.html">Carrito</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="./registro.html" class="register-button">Registrarme</a>
+            <a href="./login.html" class="login-button">Ingresar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </div>
+    </nav>
+    <br>
+
+
+
+    <!-- Cards -->
+
+    <div class="card-group">
+        <div class="card">
+            <img class="card-img-top" src="../assets/images/berserk-vol-1.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title"><label id="title1"></label></h5>
+                <p class="card-text">Nada que decir, de los mejores, si no el mejor manga de todos los tiempos.</p>
+                <button class="btn btn-primary" onclick="viewDetail(1)">Agregar al carro</button>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">En curso</small>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="../assets/images/berserk-vol-1.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title"><label id="title2"></label></h5>
+                <p class="card-text">Nada que decir, de los mejores, si no el mejor manga de todos los tiempos.</p>
+                <button class="btn btn-primary" onclick="viewDetail(2)">Agregar al carro</button>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">En curso</small>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="../assets/images/berserk-vol-1.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title"><label id="title3"></label></h5>
+                <p class="card-text">Nada que decir, de los mejores, si no el mejor manga de todos los tiempos.</p>
+                <button class="btn btn-primary" onclick="viewDetail(3)">Agregar al carro</button>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">En curso</small>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="../assets/images/berserk-vol-1.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title"><label id="title4"></label></h5>
+                <p class="card-text">Nada que decir, de los mejores, si no el mejor manga de todos los tiempos.</p>
+                <button class="btn btn-primary" onclick="viewDetail(4)">Agregar al carro</button>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">En curso</small>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="card-group">
+        <div class="card">
+            <img class="card-img-top" src="../assets/images/berserk-vol-1.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title"><label id="title5"></label></h5>
+                <p class="card-text">Nada que decir, de los mejores, si no el mejor manga de todos los tiempos.</p>
+                <button class="btn btn-primary" onclick="viewDetail(5)">Agregar al carro</button>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">En curso</small>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="../assets/images/berserk-vol-1.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title"><label id="title6"></label></h5>
+                <p class="card-text">Nada que decir, de los mejores, si no el mejor manga de todos los tiempos.</p>
+                <button class="btn btn-primary" onclick="viewDetail(6)">Agregar al carro</button>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">En curso</small>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="../assets/images/berserk-vol-1.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title"><label id="title7"></label></h5>
+                <p class="card-text">Nada que decir, de los mejores, si no el mejor manga de todos los tiempos.</p>
+                <button class="btn btn-primary" onclick="viewDetail(7)">Agregar al carro</button>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">En curso</small>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="../assets/images/berserk-vol-1.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title"><label id="title8"></label></h5>
+                <p class="card-text">Nada que decir, de los mejores, si no el mejor manga de todos los tiempos.</p>
+                <button class="btn btn-primary" onclick="viewDetail(8)">Agregar al carro</button>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">En curso</small>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="../scripts/script.js"></script>
+
+</html>

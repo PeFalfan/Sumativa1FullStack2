@@ -1,0 +1,53 @@
+html, body {
+  background-color: wheat;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  font-size: large;
+}
+
+.logo-image {
+  height: 100px;
+}
+
+.login-button{
+  background-color: purple;
+  color: white;
+  font-size: 18px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+
+.login-button:hover {
+  background-color: pink;
+}
+
+.register-button{
+  background-color: purple;
+  color: white;
+  font-size: 18px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+  margin-right: 5px;
+}
+
+.register-button:hover {
+  background-color: pink;
+}
+
+.navbar-toggler{
+  border: none;
+}
+
+.card-group {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card-img-top{
+  height: 350px;
+}
